@@ -34,6 +34,7 @@
 
 .section {
     position: relative;
+    padding: 64px 0;
     &:before {
         content: '';
         position: absolute;
@@ -53,5 +54,19 @@
         border-bottom-color: $darkblue;
         right: 0;
         bottom: 0;
+    }
+    &:nth-child(even) {
+        &:before {
+            border-left-color: transparent;
+            border-right-color: $brown;
+            left: auto;
+            right: 0;
+        }
+        &:after {
+            border-left-color: $darkblue;
+            border-right-color: transparent;
+            right: auto;
+            left: 0;
+        }
     }
 }

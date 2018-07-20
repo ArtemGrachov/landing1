@@ -1,0 +1,57 @@
+.gallery {
+  &-list {
+    @extend %list;
+    position: relative;
+    &-item {
+      &:nth-child(even) {
+        background: $brown;
+      }
+      &:nth-child(odd) {
+        background: $blue;
+      }
+    }
+    &__image {
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+    &__description {
+      text-align: center;
+      font-size: rem(20px);
+      background: $darkbrown;
+      color: white;
+      font-weight: bold;
+      width: 80%;
+      position: relative;
+      z-index: 1;
+      margin: -8px auto 0;
+    }
+  }
+  &-arrows {
+    text-align: center;
+    padding: 24px;
+    &__btn {
+      background: none;
+      height: 0;
+      width: 0;
+      border: 32px solid transparent;
+      margin: 0 32px;
+      padding: 0;
+      cursor: pointer;
+      &_left {
+        border-right-color: $darkblue;
+      }
+      &_right {
+        border-left-color: $brown;
+      }
+      &:hover,
+      &:focus {
+        opacity: .8;
+      }
+      &:active {
+        opacity: .9;
+      }
+    }
+  }
+}
