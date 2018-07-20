@@ -12,8 +12,66 @@ body {
 body {
     line-height: 1.42;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: $darkbrown;
 }
 
 a {
     transition: $transition;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    color: $darkbrown;
+    position: relative;
+    &:before,
+    &:after {
+        display: inline-block;
+        content: '';
+        height: .08em;
+        background: $brown;
+        width: .8em;
+        vertical-align: middle;
+        margin: 0 16px;
+        border-radius: 16px 0 16px 0;
+        border-bottom: .04em solid $lightbrown;
+    }
+}
+
+h1 {
+    font-size: rem(72px);
+    margin: 0 0 32px;
+}
+
+h2 {
+    font-size: rem(48px);
+    margin: 0 0 32px;
+}
+
+h3 {
+    font-size: rem(32px);
+    margin: 0 0 16px;
+}
+
+h4 {
+    font-size: rem(16px);
+    margin: 0 0 8px;
+}
+
+h5 {
+    font-size: rem(12px);
+    margin: 0 0 8px;
+}
+
+h6 {
+    font-size: rem(8px);
+    margin: 0 0 8px;
+}
+
+p {
+    margin: 0 0 16px;
 }

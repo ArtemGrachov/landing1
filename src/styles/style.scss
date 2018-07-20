@@ -31,3 +31,27 @@
 .content {
     flex-grow: 1;
 }
+
+.section {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        border: 64px solid transparent;
+        border-left-color: $brown;
+        border-top-color: $brown;
+        left: 0;
+        top: 0;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        border: 64px solid transparent;
+        border-right-color: $darkblue;
+        border-bottom-color: $darkblue;
+        right: 0;
+        bottom: 0;
+    }
+}

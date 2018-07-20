@@ -1,0 +1,112 @@
+.header {
+  background-image: url("/assets/img/landscape1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  &-top {
+    border-bottom: 1px solid white;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-nav {
+    font-size: 18px;
+    &-list {
+      @extend %list;
+      &>li {
+        display: inline-block;
+        &>a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 16px 32px;
+          border-radius: 32px 0 32px 0;
+          &:hover {
+            color: black;
+          }
+        }
+        &:nth-child(even) {
+          &>a:hover {
+            background: $blue;
+          }
+        }
+        &:nth-child(odd) {
+          &>a:hover {
+            background: $brown;
+          }
+        }
+      }
+    }
+  }
+  &-logo {
+    font-size: rem(32px);
+    font-weight: bold;
+    border-bottom: 6px dotted $blue;
+    position: relative;
+    &::first-letter {
+      color: $blue;
+    }
+    &:before {
+      position: absolute;
+      content: '';
+      top: 4px;
+      right: -2px;
+      width: 8px;
+      height: 8px;
+      background: white;
+      display: block;
+      border-bottom: 4px solid $blue;
+      transform: rotate(45deg);
+    }
+  }
+  &-title {
+    margin: auto;
+    text-align: center;
+    background: rgba(black, .2);
+    min-width: 85%;
+    padding: 64px;
+    &__main,
+    &__subtitle {
+      color: white;
+    }
+    &__main {
+      text-decoration: underline dotted rgba($lightbrown, .4);
+      border-bottom: 4px solid rgba(white, .5);
+      margin-bottom: 4px;
+      &::first-letter {
+        color: rgba(black, .7);
+      }
+      &:before,
+      &:after {
+        display: inline-block;
+        content: '';
+        height: .1em;
+        background: white;
+        width: .8em;
+        vertical-align: middle;
+        margin: 0 16px;
+        border-bottom: 4px solid $brown;
+      }
+    }
+    &__subtitle {
+      border-top: 2px dotted rgba(white, .5);
+      &:before,
+      &:after {
+        border-radius: 0;
+        border: none;
+        display: inline-block;
+        content: '';
+        width: .4em;
+        border-top: 8px dotted $lightbrown;
+        vertical-align: middle;
+        margin: 0 16px;
+        background: none;
+      }
+    }
+  }
+}
