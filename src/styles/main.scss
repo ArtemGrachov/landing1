@@ -1,0 +1,11 @@
+$font-size: 16px; // variable for @rem function (see _misc.scss);
+$transition: 200ms;
+// Basic stylesheets
+@import "./_misc.scss";
+@import "./fonts.scss";
+@import "./icons"; // necessary for svg sprites
+@import "./tags.scss";
+@import "./style.scss";
+
+// Page parts
+@import "./parts/header.scss";
