@@ -1,0 +1,8 @@
+mixin testimonials-item(name, company, photoUrl)
+  li.testimonials-list__item
+    .testimonials-list__person
+      img(src=photoUrl alt=name).testimonials-list__img
+      .testimonials-list__name #{name}
+      a(href="#" target="_blank").testimonials-list__company-link #{company}
+    blockquote.testimonials-list__text
+      block

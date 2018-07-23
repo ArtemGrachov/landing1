@@ -97,3 +97,7 @@ th {
     padding: 8px 16px;
     border: 1px solid $greybrown;
 }
+
+button {
+    transition: $transition;
+}
