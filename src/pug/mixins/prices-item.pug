@@ -1,0 +1,9 @@
+mixin prices-item(planName, descriptionArr, price, mod)
+  li.prices__item(class=mod ? 'prices__item_' + mod : null)
+    a.prices__link-wrap(href="#" target="_blank")
+      .prices__plan-name #{planName}
+      ul.prices__description
+        each descItem in descriptionArr
+          li.prices__label(class=(descItem.disabled ? 'prices__label_disabled' : '') + (descItem.highlighted ? ' ' + 'prices__label_highlighted' : '')) #{descItem.label}
+      - var priceMod = price ? null : 'prices__price_free';
+      .prices__price(class=priceMod) #{price ? '$' + price + ' per month' : 'Free!'}

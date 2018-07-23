@@ -1,1 +1,25 @@
-| prices
+scetion.section#prices
+  .container
+    h1 Prices
+    ul.prices__list
+      +prices-item('Free', [
+        {label: 'Lorem ipsum'},
+        {label: 'Dolor sit amet'},
+        {label: 'Quera libero neque', disabled: true},
+        {label: 'Ipsum molestias', disabled: true},
+        {label: 'Expedita alias', disabled: true}
+        ])
+      +prices-item('Basic', [
+        {label: 'Lorem ipsum'},
+        {label: 'Dolor sit amet'},
+        {label: 'Quera libero neque', highlighted: true},
+        {label: 'Ipsum molestias', disabled: true},
+        {label: 'Expedita alias', disabled: true}
+        ], 30, 'highlighted')
+      +prices-item('Premium', [
+        {label: 'Lorem ipsum'},
+        {label: 'Dolor sit amet'},
+        {label: 'Quera libero neque'},
+        {label: 'Ipsum molestias', highlighted: true},
+        {label: 'Expedita alias', highlighted: true}
+        ], 50)
