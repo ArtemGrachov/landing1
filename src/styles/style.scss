@@ -70,3 +70,31 @@
         }
     }
 }
+
+@media (max-width: 1240px) {
+    .container {
+        width: 100%;
+        padding: 0 32px;
+    }
+    .section {
+        &:before,
+        &:after {
+            border-width: 32px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        &:before,
+        &:after {
+            border-width: 16px;
+        }
+    }
+}

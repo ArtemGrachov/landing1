@@ -3,7 +3,7 @@
   text-align: center;
   line-height: 2;
   &-second {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("/assets/img/landscape2.jpg");
     background-attachment: fixed;
     background-size: cover;

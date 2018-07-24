@@ -1,10 +1,22 @@
 $('.gallery-list').slick({
   centerMode: true,
-  centerPadding: '30px',
   slidesToShow: 3,
   touchThreshold: 50,
   prevArrow: $('.gallery-arrows__btn_left'),
   nextArrow: $('.gallery-arrows__btn_right'),
+  responsive: [{
+      breakpoint: 1240,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 950,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 
 $('.testimonials-list').slick({

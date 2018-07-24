@@ -63,3 +63,28 @@
     background: $blue;
   }
 }
+
+@media (max-width: 1200px) {
+  .prices {
+    &__item {
+      margin: 16px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .prices {
+    &__item {
+      margin: 8px;
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .prices {
+    &__list {
+      display: block;
+      margin: 0;
+    }
+  }
+}

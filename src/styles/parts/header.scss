@@ -122,3 +122,35 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .header {
+    &-nav {
+      &__link {
+        padding: 8px 16px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .header {
+    &-title {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .header {
+    &-top {
+      display: block;
+      text-align: center;
+    }
+    &-logo {
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+  }
+}

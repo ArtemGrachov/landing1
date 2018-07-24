@@ -14,7 +14,8 @@
   &__heading {
     color: white;
     font-size: rem(64px);
-    &:before, &:after {
+    &:before,
+    &:after {
       background: white;
       border-color: $darkblue;
     }
@@ -40,6 +41,23 @@
     &__content {
       position: relative;
       z-index: 1;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .contacts {
+    &__heading {
+      font-size: rem(48px);
+      margin: 0 0 16px;
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .contacts {
+    &-form {
+      width: 100%;
     }
   }
 }

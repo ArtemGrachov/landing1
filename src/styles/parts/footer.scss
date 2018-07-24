@@ -12,6 +12,7 @@
   &__wrap {
     display: flex;
     padding: 16px 0;
+    margin: 0 -32px;
     @extend %list;
   }
   &__block {
@@ -30,5 +31,43 @@
     font-size: rem(14px);
     text-align: right;
     color: $lightbrown;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer {
+    &__block {
+      margin: 0 16px;
+    }
+    &__wrap {
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .footer {
+    &__block {
+      margin: 0 8px;
+    }
+    &__wrap {
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    text-align: center;
+    &__wrap {
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &__block {
+      margin: 0 0 32px;
+    }
   }
 }
