@@ -63,9 +63,12 @@
     border: 32px solid transparent;
     border-top-width: 48px;
     border-bottom-width: 48px;
+    border-radius: 0;
+    padding: 0;
     cursor: pointer;
     &:hover {
       opacity: .8;
+      background: none;
     }
     &_left {
       left: -32px;

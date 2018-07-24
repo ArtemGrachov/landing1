@@ -1,0 +1,45 @@
+.contacts {
+  &-section {
+    color: white;
+    min-height: 100vh;
+    background-image: url('/assets/img/landscape3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__heading {
+    color: white;
+    font-size: rem(64px);
+    &:before, &:after {
+      background: white;
+      border-color: $darkblue;
+    }
+  }
+  &-form {
+    position: relative;
+    width: 512px;
+    padding: 32px;
+    overflow: hidden;
+    &__bg {
+      background-image: url('/assets/img/landscape3.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center top;
+      position: absolute;
+      $innerMargin: 8px;
+      top: -$innerMargin;
+      left: -$innerMargin;
+      width: calc(100% + #{$innerMargin});
+      height: calc(100% + #{$innerMargin});
+      filter: blur(10px);
+    }
+    &__content {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

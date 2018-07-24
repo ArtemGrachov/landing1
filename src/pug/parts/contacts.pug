@@ -1,1 +1,39 @@
-| contacts
+section.section.contacts-section#contacts
+  form.contacts-form
+    .contacts-form__bg
+    .contacts-form__content
+      h1.contacts__heading Write us!
+      .form-group
+        label(for="name") Name
+        input(type="text" id="name" name="name" required)
+      .form-group
+        label(for="email") Email
+        input(type="email" id="email" required)
+      .form-group
+        label(for="subject") Subject
+        select(name="subject" id="subjet" required)
+          option(value="1") Lorem ipsum
+          option(value="1") Dolor sit amet
+          option(value="1") Laboriosam
+          option(value="1") Eveniet maiores
+      .form-group
+        label Some checkboxes
+        input(type="checkbox" id="checkbox1" name="checkbox1" value="checkboxVal1")
+        label(for="checkbox1")
+          | Checkbox #1
+        input(type="checkbox" id="checkbox2" name="checkbox2" value="checkboxVal2")
+        label(for="checkbox2")
+          | Checkbox #1
+        input(type="checkbox" id="checkbox3" name="checkbox3" value="checkboxVal3")  
+        label(for="checkbox3")
+          | Checkbox #1
+      .form-group
+        label Some radios
+        input(type="radio" name="radio" value="1" id="radio1")
+        label(for="radio1") Radio #1
+        input(type="radio" name="radio" value="2" id="radio2")
+        label(for="radio2") Radio #2
+      .form-group
+        label(for="msg") Message
+        textarea(name="msg" required)
+      button(type="submit") Send

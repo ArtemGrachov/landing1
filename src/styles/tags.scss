@@ -101,3 +101,100 @@ th {
 button {
     transition: $transition;
 }
+
+label {
+    display: block;
+    margin-bottom: 16px;
+}
+
+input,
+textarea,
+select {
+    padding: 8px;
+    display: block;
+    width: 100%;
+    color: #8b8b8b;
+    transition: $transition;
+    border: none;
+    border: 1px solid rgba($darkbrown, .2);
+    &:focus {
+        color: $darkbrown;
+    }
+}
+
+textarea {
+    max-width: 100%;
+    min-height: 128px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+.btn {
+    border-radius: 32px 0 32px 0;
+    padding: 16px 64px;
+    border: none;
+    background: $brown;
+    color: white;
+    font-weight: bold;
+    &:hover {
+        background: $lightbrown;
+    }
+    line-height: 1.2;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+    cursor: pointer;
+}
+
+input[type="button"],
+input[type="submit"] {
+    display: inline-block;
+    width: auto;
+}
+
+.btn {
+    display: inline-block;
+    &:hover {
+        color: white;
+    }
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+    &+label {
+        &:before {
+            display: inline-block;
+            content: '';
+            height: 1.2em;
+            width: 1.2em;
+            background: white;
+            border: 1px solid rgba($darkbrown, .2);
+            vertical-align: top;
+            margin-right: 8px;
+            transition: $transition;
+        }
+    }
+    &:checked {
+        +label {
+            &:before {
+                background: $brown;
+            }
+        }
+    }
+}
+
+input[type="radio"] {
+    &+label {
+        &:before {
+            border-radius: 50%;
+        }
+    }
+}

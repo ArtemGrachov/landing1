@@ -38,6 +38,7 @@
       border: 32px solid transparent;
       margin: 0 32px;
       padding: 0;
+      border-radius: 0;
       cursor: pointer;
       &_left {
         border-right-color: $darkblue;
@@ -48,6 +49,7 @@
       &:hover,
       &:focus {
         opacity: .8;
+        background: none;
       }
       &:active {
         opacity: .9;
