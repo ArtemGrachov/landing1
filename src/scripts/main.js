@@ -12,3 +12,15 @@ $('.testimonials-list').slick({
   prevArrow: $('.testimonials__slider-toggle_left'),
   nextArrow: $('.testimonials__slider-toggle_right'),
 });
+
+$(document).ready(function () {
+  var $headerTop = $('.header-top'),
+    headerOffset = $('.header').offset().top;
+  $(window).on('scroll', function (e) {
+    if (window.pageYOffset > headerOffset) {
+      $headerTop.addClass('header-top_dark');
+    } else {
+      $headerTop.removeClass('header-top_dark');
+    }
+  })
+})
