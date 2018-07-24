@@ -23,4 +23,11 @@ $(document).ready(function () {
       $headerTop.removeClass('header-top_dark');
     }
   })
+
+  $('.header-nav__link').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    })
+  })
 })
