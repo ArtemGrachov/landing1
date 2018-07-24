@@ -14,10 +14,12 @@
   &__heading {
     color: white;
     font-size: rem(64px);
-    &:before,
-    &:after {
-      background: white;
-      border-color: $darkblue;
+    &>span {
+      &:before,
+      &:after {
+        background: white;
+        border-color: $darkblue;
+      }
     }
   }
   &-form {

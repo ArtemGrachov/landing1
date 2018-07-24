@@ -38,18 +38,27 @@ h5,
 h6 {
     text-align: center;
     color: $darkbrown;
-    position: relative;
-    &:before,
-    &:after {
+    >span {
+        position: relative;
         display: inline-block;
-        content: '';
-        height: .08em;
-        background: $brown;
-        width: .8em;
-        vertical-align: middle;
-        margin: 0 16px;
-        border-radius: 16px 0 16px 0;
-        border-bottom: .04em solid $lightbrown;
+        &:before,
+        &:after {
+            display: block;
+            position: absolute;
+            top: 50%;
+            content: '';
+            height: .08em;
+            background: $brown;
+            width: .8em;
+            border-radius: 16px 0 16px 0;
+            border-bottom: .04em solid $lightbrown;
+        }
+        &:before {
+            left: -1em;
+        }
+        &:after {
+            right: -1em;
+        }
     }
 }
 
@@ -91,6 +100,10 @@ table {
     width: 100%;
     border: 1px solid $greybrown;
     border-collapse: collapse;
+}
+
+.table-container {
+    overflow-x: auto;
 }
 
 td,
@@ -223,5 +236,9 @@ input[type="radio"] {
     }
     h4 {
         font-size: rem(16px);
+    }
+    tr,
+    td {
+        padding: 8px;
     }
 }

@@ -2,7 +2,8 @@ section.section.contacts-section#contacts
   form.contacts-form
     .contacts-form__bg
     .contacts-form__content
-      h1.contacts__heading Write us!
+      +heading('h1', 'contacts__heading')
+        |  Write us!
       .form-group
         label(for="name") Name
         input(type="text" id="name" name="name" required)
