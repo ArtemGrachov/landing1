@@ -26,20 +26,34 @@ $('.testimonials-list').slick({
 });
 
 $(document).ready(function () {
-  var $headerTop = $('.header-top'),
-    headerOffset = $('.header').offset().top;
+  let $headerTop = $('.header-top'),
+    headerOffset = $('.header').offset().top,
+    $scrollTopArrow = $('.up-btn');
+
+  function scrollTo(pos) {
+    $('html, body').stop();
+    $('html, body').animate({
+      scrollTop: pos
+    })
+  }
+
   $(window).on('scroll', function (e) {
     if (window.pageYOffset > headerOffset) {
       $headerTop.addClass('header-top_dark');
+      $scrollTopArrow.addClass('up-btn_visible');
     } else {
       $headerTop.removeClass('header-top_dark');
+      $scrollTopArrow.removeClass('up-btn_visible');
     }
   })
 
   $('.header-nav__link').on('click', function (e) {
     e.preventDefault();
-    $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top
-    })
+    scrollTo($($(this).attr('href')).offset().top)
+  })
+
+  $('.up-btn').on('click', function (e) {
+    e.preventDefault();
+    scrollTo(0);
   })
 })

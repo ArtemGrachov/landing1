@@ -71,6 +71,21 @@
   }
 }
 
+.up-btn {
+  font-size: rem(36px);
+  position: fixed;
+  bottom: -64px;
+  right: 36px;
+  z-index: 20;
+  background: rgba(black, .3);
+  padding: 8px;
+  display: block;
+  line-height: 1;
+  &_visible {
+    bottom: 36px;
+  }
+}
+
 @media (max-width: 1240px) {
   .container {
     width: 100%;
