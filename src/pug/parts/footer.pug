@@ -7,24 +7,36 @@ footer.footer
         p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis perferendis, dolores ratione, quidem reprehenderit voluptatum laudantium, eveniet voluptates eius deserunt voluptatem veniam! Accusantium, ullam recusandae expedita aperiam facere ut iure.
       li.footer__block
         +heading('h3')
-          | Contacts
+          |  Contacts
         ul.footer__contacts
-          li.footer__contact Phone: 
+          li.footer__contact
+            i.fas.fa-phone-square
+            |  Phone: 
             a(href="tel:3805555555") +380 555 55 55
-          li.footer__contact Address: 
+          li.footer__contact
+            i.fas.fa-map-marker-alt
+            |  Address: 
             a(href=" http://maps.google.com/?q=LoremIpsum" target="_blank") Lorem, Ipsum str. 24
-          li.footer__contact  Email: 
+          li.footer__contact
+            i.fas.fa-at
+            |  Email: 
             a(href="mailto:lorem@ispum.com") lorem@ipsum.com
       li.footer__block
         +heading('h3')
           | Links
         ul.footer__contacts
           li.footer__contact
-            a(href="#" target="_blank") Facebook
+            a(href="#" target="_blank")
+              i.fab.fa-facebook-square
+              |  Facebook
           li.footer__contact
-            a(href="#" target="_blank") GitHub
+            a(href="#" target="_blank")
+              i.fab.fa-github
+              |  GitHub
           li.footer__contact
-            a(href="#" target="_blank") LinkedIn
+            a(href="#" target="_blank")
+              i.fab.fa-linkedin
+              |  LinkedIn
     .footer__author
         p Designed and developed by 
           a(href="https://github.com/ArtemGrachov/") Artem Grachov

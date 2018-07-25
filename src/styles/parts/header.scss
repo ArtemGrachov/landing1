@@ -19,7 +19,7 @@
     z-index: 100;
     transition: $transition;
     &_dark {
-      background: rgba(black, .5);
+      background: rgba(black, .8);
       padding: 8px 32px;
       border-bottom: none;
       box-shadow: 0 4px 16px 0 rgba(black, .1);
@@ -51,6 +51,20 @@
         &>a:hover {
           background: $brown;
         }
+      }
+    }
+    &__toggle {
+      margin: 10px 0;
+      display: inline-block;
+      color: $blue;
+      padding: 8px;
+      line-height: 1;
+      display: none;
+      font-size: rem(32px);
+      &:hover,
+      &:focus,
+      &:active {
+        color: $blue;
       }
     }
   }
@@ -149,6 +163,39 @@
     &-logo {
       display: inline-block;
       margin-bottom: 8px;
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .header {
+    &-top {
+      display: flex;
+      padding: 16px;
+    }
+    &-nav {
+      &__toggle {
+        display: block;
+      }
+      &__list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(black, .7);
+        padding: 0 16px;
+        display: none;
+        &_visible {
+          display: block;
+        }
+      }
+      &__item {
+        display: block;
+      }
+      &__link {
+        border-radius: 0;
+        padding: 16px;
+      }
     }
   }
 }

@@ -106,6 +106,9 @@
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 8px;
+  }
   .section {
     &:before,
     &:after {

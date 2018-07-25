@@ -116,3 +116,17 @@
     }
   }
 }
+
+@media (max-width: 560px) {
+  .testimonials {
+    &__slider-toggle {
+      border-width: 16px;
+      &_right {
+        right: 0;
+      }
+      &_left {
+        left: 0;
+      }
+    }
+  }
+}

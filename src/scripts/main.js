@@ -56,4 +56,11 @@ $(document).ready(function () {
     e.preventDefault();
     scrollTo(0);
   })
+
+  $('.header-nav__toggle').on('click', function (e) {
+    e.preventDefault();
+    $('.header-nav__list').slideToggle(300, function () {
+      $('.header-nav__list').toggleClass('header-nav__list_visible');
+    })
+  })
 })
