@@ -1,100 +1,100 @@
 .wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .icon {
-    display: inline-block;
-    height: 1em;
-    width: 1em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    vertical-align: top;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  vertical-align: top;
 }
 
 .container {
-    margin: 0 auto;
-    width: 1200px;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .main-container {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    text-align: justify;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  text-align: justify;
 }
 
 .content {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .section {
-    position: relative;
-    padding: 64px 0;
+  position: relative;
+  padding: 64px 0;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    border: 64px solid transparent;
+    border-left-color: $brown;
+    border-top-color: $brown;
+    left: 0;
+    top: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    border: 64px solid transparent;
+    border-right-color: $darkblue;
+    border-bottom-color: $darkblue;
+    right: 0;
+    bottom: 0;
+  }
+  &:nth-child(even) {
     &:before {
-        content: '';
-        position: absolute;
-        display: block;
-        border: 64px solid transparent;
-        border-left-color: $brown;
-        border-top-color: $brown;
-        left: 0;
-        top: 0;
+      border-left-color: transparent;
+      border-right-color: $brown;
+      left: auto;
+      right: 0;
     }
     &:after {
-        content: '';
-        position: absolute;
-        display: block;
-        border: 64px solid transparent;
-        border-right-color: $darkblue;
-        border-bottom-color: $darkblue;
-        right: 0;
-        bottom: 0;
+      border-left-color: $darkblue;
+      border-right-color: transparent;
+      right: auto;
+      left: 0;
     }
-    &:nth-child(even) {
-        &:before {
-            border-left-color: transparent;
-            border-right-color: $brown;
-            left: auto;
-            right: 0;
-        }
-        &:after {
-            border-left-color: $darkblue;
-            border-right-color: transparent;
-            right: auto;
-            left: 0;
-        }
-    }
+  }
 }
 
 @media (max-width: 1240px) {
-    .container {
-        width: 100%;
-        padding: 0 32px;
+  .container {
+    width: 100%;
+    padding: 0 32px;
+  }
+  .section {
+    &:before,
+    &:after {
+      border-width: 32px;
     }
-    .section {
-        &:before,
-        &:after {
-            border-width: 32px;
-        }
-    }
+  }
 }
 
 @media (max-width: 640px) {
-    .container {
-        padding: 0 16px;
-    }
+  .container {
+    padding: 0 16px;
+  }
 }
 
 @media (max-width: 480px) {
-    .section {
-        &:before,
-        &:after {
-            border-width: 16px;
-        }
+  .section {
+    &:before,
+    &:after {
+      border-width: 16px;
     }
+  }
 }

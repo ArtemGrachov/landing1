@@ -1,33 +1,33 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    font-family: 'Raleway';
+  height: 100%;
+  font-family: 'Raleway';
 }
 
 body {
-    line-height: 1.42;
-    color: $darkbrown;
-    font-size: $font-size;
+  line-height: 1.42;
+  color: $darkbrown;
+  font-size: $font-size;
 }
 
 a {
-    transition: $transition;
-    color: $brown;
-    text-decoration: none;
-    &:hover {
-        color: $darkblue;
-    }
+  transition: $transition;
+  color: $brown;
+  text-decoration: none;
+  &:hover {
+    color: $darkblue;
+  }
 }
 
 hr {
-    border: none;
-    border-top: 1px dotted $darkblue;
+  border: none;
+  border-top: 1px dotted $darkblue;
 }
 
 h1,
@@ -36,225 +36,225 @@ h3,
 h4,
 h5,
 h6 {
-    text-align: center;
-    color: $darkbrown;
-    >span {
-        position: relative;
-        display: inline-block;
-        &:before,
-        &:after {
-            display: block;
-            position: absolute;
-            top: 50%;
-            content: '';
-            height: .08em;
-            background: $brown;
-            width: .8em;
-            border-radius: 16px 0 16px 0;
-            border-bottom: .04em solid $lightbrown;
-        }
-        &:before {
-            left: -1em;
-        }
-        &:after {
-            right: -1em;
-        }
+  text-align: center;
+  color: $darkbrown;
+  >span {
+    position: relative;
+    display: inline-block;
+    &:before,
+    &:after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      content: '';
+      height: .08em;
+      background: $brown;
+      width: .8em;
+      border-radius: 16px 0 16px 0;
+      border-bottom: .04em solid $lightbrown;
     }
+    &:before {
+      left: -1em;
+    }
+    &:after {
+      right: -1em;
+    }
+  }
 }
 
 h1 {
-    font-size: rem(72px);
-    margin: 0 0 32px;
+  font-size: rem(72px);
+  margin: 0 0 32px;
 }
 
 h2 {
-    font-size: rem(48px);
-    margin: 0 0 32px;
+  font-size: rem(48px);
+  margin: 0 0 32px;
 }
 
 h3 {
-    font-size: rem(32px);
-    margin: 0 0 16px;
+  font-size: rem(32px);
+  margin: 0 0 16px;
 }
 
 h4 {
-    font-size: rem(16px);
-    margin: 0 0 8px;
+  font-size: rem(16px);
+  margin: 0 0 8px;
 }
 
 h5 {
-    font-size: rem(12px);
-    margin: 0 0 8px;
+  font-size: rem(12px);
+  margin: 0 0 8px;
 }
 
 h6 {
-    font-size: rem(8px);
-    margin: 0 0 8px;
+  font-size: rem(8px);
+  margin: 0 0 8px;
 }
 
 p {
-    margin: 0 0 16px;
+  margin: 0 0 16px;
 }
 
 table {
-    width: 100%;
-    border: 1px solid $greybrown;
-    border-collapse: collapse;
+  width: 100%;
+  border: 1px solid $greybrown;
+  border-collapse: collapse;
 }
 
 .table-container {
-    overflow-x: auto;
+  overflow-x: auto;
 }
 
 td,
 th {
-    padding: 8px 16px;
-    border: 1px solid $greybrown;
+  padding: 8px 16px;
+  border: 1px solid $greybrown;
 }
 
 button {
-    transition: $transition;
+  transition: $transition;
 }
 
 label {
-    display: block;
-    margin-bottom: 16px;
+  display: block;
+  margin-bottom: 16px;
 }
 
 input,
 textarea,
 select {
-    padding: 8px;
-    display: block;
-    width: 100%;
-    color: #8b8b8b;
-    transition: $transition;
-    border: none;
-    border: 1px solid rgba($darkbrown, .2);
-    &:focus {
-        color: $darkbrown;
-    }
+  padding: 8px;
+  display: block;
+  width: 100%;
+  color: #8b8b8b;
+  transition: $transition;
+  border: none;
+  border: 1px solid rgba($darkbrown, .2);
+  &:focus {
+    color: $darkbrown;
+  }
 }
 
 textarea {
-    max-width: 100%;
-    min-height: 128px;
+  max-width: 100%;
+  min-height: 128px;
 }
 
 .form-group {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 button,
 input[type="button"],
 input[type="submit"],
 .btn {
-    border-radius: 32px 0 32px 0;
-    padding: 16px 64px;
-    border: none;
-    background: $brown;
-    color: white;
-    font-weight: bold;
-    &:hover {
-        background: $lightbrown;
-    }
-    line-height: 1.2;
+  border-radius: 32px 0 32px 0;
+  padding: 16px 64px;
+  border: none;
+  background: $brown;
+  color: white;
+  font-weight: bold;
+  &:hover {
+    background: $lightbrown;
+  }
+  line-height: 1.2;
 }
 
 button,
 input[type="button"],
 input[type="submit"] {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 input[type="button"],
 input[type="submit"] {
-    display: inline-block;
-    width: auto;
+  display: inline-block;
+  width: auto;
 }
 
 .btn {
-    display: inline-block;
-    &:hover {
-        color: white;
-    }
+  display: inline-block;
+  &:hover {
+    color: white;
+  }
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-    display: none;
-    &+label {
-        &:before {
-            display: inline-block;
-            content: '';
-            height: 1.2em;
-            width: 1.2em;
-            background: white;
-            border: 1px solid rgba($darkbrown, .2);
-            vertical-align: top;
-            margin-right: 8px;
-            transition: $transition;
-        }
+  display: none;
+  &+label {
+    &:before {
+      display: inline-block;
+      content: '';
+      height: 1.2em;
+      width: 1.2em;
+      background: white;
+      border: 1px solid rgba($darkbrown, .2);
+      vertical-align: top;
+      margin-right: 8px;
+      transition: $transition;
     }
-    &:checked {
-        +label {
-            &:before {
-                background: $brown;
-            }
-        }
+  }
+  &:checked {
+    +label {
+      &:before {
+        background: $brown;
+      }
     }
+  }
 }
 
 input[type="radio"] {
-    &+label {
-        &:before {
-            border-radius: 50%;
-        }
+  &+label {
+    &:before {
+      border-radius: 50%;
     }
+  }
 }
 
 @media (max-width: 1200px) {
-    h1 {
-        font-size: rem(64px);
-    }
+  h1 {
+    font-size: rem(64px);
+  }
 }
 
 @media (max-width: 860px) {
-    body {
-        font-size: 14px;
-    }
-    h1 {
-        font-size: rem(48px);
-        margin: 0 0 16px;
-    }
-    h2 {
-        font-size: rem(32px);
-        margin: 0 0 16px;
-    }
-    h3 {
-        font-size: rem(24px);
-    }
-    h4 {
-        font-size: rem(16px);
-    }
-    tr,
-    td {
-        padding: 8px;
-    }
+  body {
+    font-size: rem(14px);
+  }
+  h1 {
+    font-size: rem(48px);
+    margin: 0 0 16px;
+  }
+  h2 {
+    font-size: rem(32px);
+    margin: 0 0 16px;
+  }
+  h3 {
+    font-size: rem(24px);
+  }
+  h4 {
+    font-size: rem(16px);
+  }
+  tr,
+  td {
+    padding: 8px;
+  }
 }
 
 @media (max-width: 500px) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        &>span {
-            &:before,
-            &:after {
-                content: none;
-            }
-        }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &>span {
+      &:before,
+      &:after {
+        content: none;
+      }
     }
+  }
 }
