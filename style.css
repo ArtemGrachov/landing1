@@ -602,7 +602,7 @@ input[type="radio"] + label:before {
 }
 
 .header {
-  background-image: url("/assets/img/landscape1.jpg");
+  background-image: url("assets/img/landscape1.jpg");
   -webkit-background-size: cover;
           background-size: cover;
   background-attachment: fixed;
@@ -852,7 +852,7 @@ input[type="radio"] + label:before {
 
 .about-us-second {
   min-height: 100vh;
-  background-image: url("/assets/img/landscape2.jpg");
+  background-image: url("assets/img/landscape2.jpg");
   background-attachment: fixed;
   -webkit-background-size: cover;
           background-size: cover;
@@ -1192,7 +1192,7 @@ input[type="radio"] + label:before {
 .contacts-section {
   color: white;
   min-height: 100vh;
-  background-image: url("/assets/img/landscape3.jpg");
+  background-image: url("assets/img/landscape3.jpg");
   -webkit-background-size: cover;
           background-size: cover;
   background-attachment: fixed;
@@ -1235,7 +1235,7 @@ input[type="radio"] + label:before {
 }
 
 .contacts-form__bg {
-  background-image: url("/assets/img/landscape3.jpg");
+  background-image: url("assets/img/landscape3.jpg");
   -webkit-background-size: cover;
           background-size: cover;
   background-attachment: fixed;
